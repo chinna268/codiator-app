@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 //importing of bootstrap for js functionality
 import 'bootstrap/dist/js/bootstrap.bundle';
 
-import './assests/CSS/style.css';
+import './assets/CSS/style.css';
 // custorm css link
  
 import App from './App';
