@@ -1,4 +1,8 @@
 import { Link } from "react-router-dom"
+//we only added fa fa icons
+//camel case manataory
+import { FaUserAlt, FaSignInAlt, FaSignOutAlt, FaTachometerAlt } from "react-icons/fa"
+
 export default function Navbar({ title }) {
     return (
         <>
@@ -16,7 +20,8 @@ export default function Navbar({ title }) {
                             <li className="nav-item">
                                 {/* <a className="nav-lik active" aria-current="page" href="/#">
                             Home</a> */}
-                                <Link to="/" className="nav-link active fs-1" >Home</Link>
+                                <Link to="/" className="nav-link active " >Home</Link>
+                                {/* fs-1 for ofnt increasing */}
                             </li>
                             <li className="nav-item">
                                 <Link to="/Contact-Us" className="nav-link" >Contact-Us</Link>
@@ -27,8 +32,28 @@ export default function Navbar({ title }) {
                             </li>
                         </ul>
                         <form className="d-flex">
-                            <button className="btn btn-outline-success me-4" type="submit">Search</button>
+                            <button className="btn btn-outline-success me-5 pr-5" type="submit">Search</button>
                         </form>
+                        <div className="d-flex">
+
+                            {/* Befre Login */}
+                            <Link to="/signin" className="btn btn-success btn-sm me-3"><FaSignInAlt className="me-2" />
+                                Login</Link>
+                            {/* title="Click to ligin"  write inside className*/}
+                            <Link to="/signup" className="btn btn-warning btm-sm me-2"><FaUserAlt className="me-2" />
+                                Signup</Link>
+                            {/* title="click to Sign up" */}
+
+
+                            {/* After Login functions */}
+
+                            <Link to=" " className="btn btn-info btn-sm me-2" title="Goto Dashboard">
+                                <FaTachometerAlt />Profile</Link>
+                            <Link to=" " className="btn btn-danger btn-sm" title="Logout">
+                                <FaSignOutAlt />Logout</Link>
+
+
+                        </div>
                     </div>
                 </div>
             </nav>

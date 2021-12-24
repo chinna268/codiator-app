@@ -10,6 +10,10 @@ import Home from "./routes/Home";
 import Contact from "./routes/Contact";
 import Gallery from "./routes/Gallery";
 
+// authentication
+import Signup from "./routes/auth/Signup";
+import Signin from "./routes/auth/Signin";
+
 export default function App() {
 
     return (
@@ -22,6 +26,9 @@ export default function App() {
             <Route  index element={<Home/>} />
             <Route path="/Contact-Us" element={<Contact/>} />
             <Route path="/gallery" element={<Gallery/>}  />
+
+            <Route path="/signin" element={<Signin/>} />
+            <Route path="/signup" element={<Signup/>} />
             {/* \wrong url */}
             <Route path="*" element={<NoPageFound/> } />
 
