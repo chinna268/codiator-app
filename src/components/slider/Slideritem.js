@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default function Slideritem(props) {
-    
+     
     return (
         <>
         <div className={`carousel-item ${props.active}`}>

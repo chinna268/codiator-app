@@ -3,6 +3,7 @@ import Slideritem from './Slideritem'
 import SliderBtn from './SliderBtn'
 import img1 from "../../assets/images/img1.jpg"
 export default function Slider(props) {
+  // var img3 ="addedd adress copy link  of img from  pixel browser"
   return (
     <>
       <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
