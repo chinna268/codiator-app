@@ -1,0 +1,71 @@
+.mySliderSize .mySliderImgSize
+{
+height:50vh
+}
+.gallary img{
+    width:100%;
+    
+}
+.signup-logo
+{
+    height: 250px;
+
+}
+
+/* .signupform
+{
+    width:60%;
+    margin:auto;
+} */
+/* .cngcol
+{
+    height: 100px;
+} */
+
+@media only screen and (min-width:576px)
+{
+    .signupform
+    {
+        width:95%;
+        margin:auto;
+    }
+            
+}
+@media only screen and (min-width:576px)
+{
+    .signupform
+    {
+        width:92%;
+        margin:auto;
+    }
+            
+}
+@media only screen and (min-width:768px)
+{
+    .signupform
+    {
+        width:90%;
+        margin:auto;
+    }
+
+}
+@media only screen and (min-width:992px)
+{
+    .signupform
+    {
+        width:85%;
+        margin:auto;
+    }
+
+}
+
+/* every time tc hcekc max value */
+@media only screen and (min-width:1200px)
+{
+    .signupform
+    {
+        width:70%;
+        margin:auto;
+    }
+           
+}
